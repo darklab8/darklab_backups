@@ -1,0 +1,18 @@
+---
+- hosts: microk8s_server
+  become: yes
+  gather_facts: true
+  
+  tasks:
+
+    - name: Backup darkbot-dev
+      ansible.builtin.fetch:
+        src: /mnt/darkbot-dev/channels.json
+        dest: backups/darkbot-dev/channels.json
+        flat: yes
+        
+    - name: Backup darkbot-prod
+      ansible.builtin.fetch:
+        src: /mnt/darkbot-prod/channels.json
+        dest: backups/darkbot-prod/channels.json
+        flat: yes
