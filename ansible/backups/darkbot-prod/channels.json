@@ -947,7 +947,8 @@
         "Alaska",
         "Omicron",
         "Nu",
-        "Vespucci"
+        "Vespucci",
+        "connecticut"
       ]
     },
     "friend": {
@@ -960,7 +961,8 @@
         "US|",
         "=CR=",
         "LPI-",
-        "5th|"
+        "5th|",
+        "46th|"
       ],
       "alert": 999
     },
@@ -991,7 +993,9 @@
         "APM",
         "GC-",
         "INS-",
-        "Red.Snake"
+        "Red.Snake",
+        "Delusion",
+        "Piratebomber03"
       ],
       "alert": 999
     }
