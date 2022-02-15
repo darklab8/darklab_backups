@@ -11,7 +11,7 @@
         state: directory
 
     - name: Scale down darkbot-dev
-      shell: microk8s kubectl scale deploy dind-deploy --namespace=darkbot-dev --replicas 0
+      shell: microk8s kubectl scale deploy darkbot-deploy --namespace=darkbot-dev --replicas 0
 
     - name: Sleep until termination
       shell: sleep 60
@@ -22,4 +22,4 @@
         dest: /mnt/darkbot-dev/channels.json
 
     - name: Scale up darkbot-dev
-      shell: microk8s kubectl scale deploy dind-deploy --namespace=darkbot-dev --replicas 1
+      shell: microk8s kubectl scale deploy darkbot-deploy --namespace=darkbot-dev --replicas 1

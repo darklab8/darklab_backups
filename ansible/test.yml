@@ -1,0 +1,8 @@
+---
+- hosts: microk8s_server
+  become: yes
+  
+  tasks:
+
+    - name: ls
+      shell: ls

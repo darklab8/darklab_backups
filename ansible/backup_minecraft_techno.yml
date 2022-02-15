@@ -1,0 +1,41 @@
+---
+- hosts: microk8s_server
+  become: yes
+  gather_facts: true
+  
+  tasks:
+
+    - name: Create a directory backups if it does not exist
+      ansible.builtin.file:
+        path: /mnt/backups
+        state: directory
+
+    - name: Compress directory /path/to/foo/ into /path/to/foo.tgz
+      community.general.archive:
+        path: /mnt/minecraft-techno
+        dest: /mnt/backups/minecraft-techno.tar
+
+    # - name: Backup darkbot-prod
+    #   ansible.builtin.fetch:
+    #     src: /mnt/backups/minecraft-techno.tar
+    #     dest: backups/minecraft-techno/app_220213_2.tar
+    #     flat: yes
+
+    # - name: Synchronization using rsync protocol (pull)
+    #   ansible.posix.synchronize:
+    #     mode: pull
+    #     src: rsync://darklab.dedyn.io/mnt/backups/minecraft-techno.tar
+    #     dest: backups/minecraft-techno/app_220213_2.tar
+    #   delegate_to: delegate.host
+
+    # needing to have sudo apt install rsync grsync ?
+    # - name: Synchronization using rsync protocol (pull)
+    #   synchronize:
+    #     mode: pull
+    #     src: rsync://darklab.dedyn.io/mnt/backups/123.txt
+    #     dest: backups/minecraft-techno/123.txt
+
+      # - name: Download
+      #   shell: rsync -a root@darklab.dedyn.io:/mnt/backups/minecraft-techno.tar backups/minecraft-techno/app_220213_2.tar
+      #   delegate_to: localhost
+        

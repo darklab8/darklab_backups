@@ -735,7 +735,6 @@
         "Zurich",
         "Stuttgart",
         "Frankfurt",
-        "Orkney",
         "Cortez",
         "Cortez",
         "55",
@@ -769,7 +768,9 @@
         "Texas",
         "New",
         "York",
-        "California"
+        "California",
+        "Orkney",
+        "Orkney"
       ]
     },
     "enemy": {
@@ -831,7 +832,9 @@
       "list": [
         "Reincarnation Outpost",
         "Jims Junktown",
-        "Atka Storage Appendix"
+        "Gas Miner Konpeki",
+        "Legacy Shipping Platform",
+        "Legacy Mining Platform"
       ]
     },
     "friend": {
@@ -885,7 +888,8 @@
         "Gas.boy",
         "[ALG]",
         "Gas.Boy",
-        "Maru"
+        "Maru",
+        "Shoinu"
       ],
       "alert": 2
     }
@@ -893,7 +897,6 @@
   "912345754293641286": {
     "forum": {
       "list": [
-        "HS>",
         "DTR",
         "Deterrence",
         "Ravenna",
@@ -1073,47 +1076,6 @@
       ]
     }
   },
-  "903796652349988916": {
-    "system": {
-      "list": [
-        "Burgundy",
-        "Champagne",
-        "Ile-de-France",
-        "Languedoc",
-        "Lorraine",
-        "Orkney",
-        "Orleanais",
-        "Picardy",
-        "Provence",
-        "Zurich"
-      ]
-    },
-    "friend": {
-      "list": [
-        "MNG|",
-        "\\*/~",
-        "[GN]",
-        "GNS-",
-        "[C]-"
-      ],
-      "alert": 999
-    },
-    "enemy": {
-      "list": [
-        "[FLG]",
-        "HS>",
-        "L\\-",
-        "GC-",
-        "MNS-",
-        "MdG/-",
-        "Ori|",
-        "BAF|",
-        "HMS-",
-        "Akrafjall"
-      ],
-      "alert": 4
-    }
-  },
   "925363845302743071": {
     "forum": {
       "list": [
@@ -1276,6 +1238,45 @@
       "list": [
         "Frankfurt",
         "Dublin"
+      ]
+    }
+  },
+  "903796652349988916": {
+    "system": {
+      "list": [
+        "Burgundy",
+        "Champagne",
+        "Ile-de-France",
+        "Languedoc",
+        "Lorraine",
+        "Orkney",
+        "Orleanais",
+        "Picardy",
+        "Provence",
+        "Zurich"
+      ]
+    },
+    "friend": {
+      "list": [
+        "\\*/~",
+        "[GN]",
+        "GNS-"
+      ],
+      "alert": 999
+    }
+  },
+  "683429894406930482": {
+    "base": {
+      "list": [
+        "Chesterfield Station",
+        "Tudor Processing Station"
+      ]
+    }
+  },
+  "943162296920854579": {
+    "base": {
+      "list": [
+        "Reincarnation Outpost"
       ]
     }
   }
